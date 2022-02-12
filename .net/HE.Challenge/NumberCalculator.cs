@@ -9,7 +9,7 @@ namespace HE.Challenge
     public class NumberCalculator
     {
 
-        public int[] SumValuesFromArraysReversingSecond(int[] arrayX, int[] arrayY)
+        public int[]? SumValuesFromArraysReversingSecond(int[]? arrayX, int[]? arrayY)
         {
             if (arrayX == null && arrayY == null) return null;
             if (arrayX == null || arrayX.Length == 0 && arrayY != null) return arrayY;

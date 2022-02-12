@@ -9,9 +9,11 @@ namespace HE.Challenge
 {
     internal static class InputValidator
     {
-        internal static bool TryParseArray(string input, out int[] array)
+        internal static bool TryParseArray(string? input, out int[]? array)
         {
             array = null;
+            if (input == null) return false;
+
             var splitedArray = Regex.Split(input, ",");
             var result = !splitedArray.Any(s => !int.TryParse(s, out int i));
             if (result)
