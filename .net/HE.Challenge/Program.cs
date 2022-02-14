@@ -1,7 +1,19 @@
 ﻿using HE.Challenge;
+using HE.Challenge.Business;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((_, services) =>
+        services.BindBusiness())
+    .Build();
+
+using IServiceScope serviceScope = host.Services.CreateScope();
+IServiceProvider provider = serviceScope.ServiceProvider;
+
+var calculator = provider.GetRequiredService<INumberCalculator>();
 
 Console.WriteLine("Hi code reviewer!");
-var calculator = new NumberCalculator();
 do
 {
     Console.WriteLine("Please enter first array of integer numbers (format example: 1,2,300 ): ");

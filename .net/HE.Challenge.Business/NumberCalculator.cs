@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HE.Challenge
+﻿namespace HE.Challenge.Business
 {
-    public class NumberCalculator
+    public class NumberCalculator : INumberCalculator
     {
 
         public int[]? SumValuesFromArraysReversingSecond(int[]? arrayX, int[]? arrayY)

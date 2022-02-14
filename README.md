@@ -10,6 +10,7 @@ The aim of this repository is to provide solutions for code challenges.
 
 You will find two simple projects in .net folder:
 - Console project which one you can add the arrays you would like to sum.
+- There is a Business project where the logic is allocated.
 - Test project which one have some data validations and some real cases
 
 # Algorithms

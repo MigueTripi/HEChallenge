@@ -1,4 +1,4 @@
-using HE.Challenge;
+using HE.Challenge.Business;
 using NUnit.Framework;
 
 namespace QE.Challenge.Test

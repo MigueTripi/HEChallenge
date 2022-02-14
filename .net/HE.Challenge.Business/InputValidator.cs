@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
-namespace HE.Challenge
+namespace HE.Challenge.Business
 {
-    internal static class InputValidator
+    public static class InputValidator
     {
-        internal static bool TryParseArray(string? input, out int[]? array)
+        public static bool TryParseArray(string? input, out int[]? array)
         {
             array = null;
             if (input == null) return false;
